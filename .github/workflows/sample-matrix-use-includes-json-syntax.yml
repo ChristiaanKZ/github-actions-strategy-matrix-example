@@ -10,7 +10,7 @@ jobs:
         id: setmatrix
         run: |
            matrixStringifiedObject="{\"include\":[{\"run\":\"run1\"},{\"run\":\"run2\"}]}"
-           echo "name=matrix::$matrixStringifiedObject" >> "$GITHUB_ENV"
+           echo "name=matrix::$matrixStringifiedObject"
   job2:
     needs: job1
     runs-on: ubuntu-latest
